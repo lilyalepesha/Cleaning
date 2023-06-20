@@ -1,0 +1,84 @@
+.thanks{
+    padding: 9rem 0 12rem 0;
+    @media(min-width: 1450px){
+        background-image: url("/images/thanks/thanks1.png");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    &__container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 3rem;
+        @media(max-width: 1000px){
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__title{
+        max-width: 50rem;
+        margin-bottom: 1.7rem;
+        span{
+            font-weight: 600;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 160%;
+        color: $darkgray;
+        max-width: 52rem;
+    }
+}
+.thanks__buttons{
+    column-gap: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @media(max-width: $small-tablet){
+        margin-top: 3rem;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 3rem;
+        padding: 0 1.3rem 3rem 1.3rem;
+        background-color: $white;
+    }
+    .button__green{
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2.2rem 5.7rem;
+        text-align: center;
+        span{
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 160%;
+        }
+    }
+    .button__orange{
+        padding: 3rem 4.8rem;
+    }
+    ul{
+        list-style-type: disc;
+        li{
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: $darkgray;
+        }
+    }
+}
+
+
+

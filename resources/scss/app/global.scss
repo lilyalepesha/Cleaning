@@ -1,0 +1,198 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    @media(max-width: 1060px){
+        font-size: 8px;
+    }
+    @media(max-width: $small-tablet){
+        font-size: 6px;
+    }
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Mont', sans-serif;
+    height: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    background-color: $white;
+    &.lock{
+        overflow: hidden;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+.container{
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-fluid{
+    max-width: 1920px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.contacts__connection{
+    max-width: 1.4rem;
+    font-size: 1.2rem;
+    color: $gray;
+
+}
+
+.blue__button-outline{
+    cursor: pointer;
+    border: 0.1rem solid $blue;
+    border-radius: 100px;
+    padding: 2.1rem 2.5rem;
+    background-color: transparent;
+    color: $darkgray;
+    font-weight: 300;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: $blue;
+            color: white;
+        }
+    }
+}
+h1{
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 150%;
+    color: $darkgray;
+    @media (max-width: $small-tablet) {
+        font-size: 2.6rem;
+    }
+}
+.button__blue{
+    cursor: pointer;
+    background-color: $blue;
+    padding: 3rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10rem;
+    color: $white;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-out;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: darken($blue, 15%);
+        }
+    }
+}
+.button__orange{
+    cursor: pointer;
+    background-color: $orange;
+    padding: 3rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10rem;
+    color: $white;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-out;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: darken($orange, 15%);
+        }
+    }
+}
+h2{
+    font-size: 2.4rem;
+}
+
+.simple__orange-button{
+    color: $white;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 150%;
+    padding: 1.1rem 4.7rem;
+    border-radius: 3rem;
+    background-color: $orange;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-out;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: darken($orange, 15%);
+        }
+    }
+}
+h3{
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: $darkgray;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 140%;
+}
+h4{
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 140%;
+    color: $white;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    width: 122% !important;
+}
+
+.button__green{
+    cursor: pointer;
+    background-color: $lightgreen;
+    padding: 3rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 10rem;
+    color: $white;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-out;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: darken($lightgreen, 15%);
+        }
+    }
+}
+.alert{
+    padding: 2rem 0;
+    width: 100%;
+    background-color: $lightgreen;
+    text-align: center;
+    color: $white;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.error-register{
+    margin-top: 0.2rem;
+    color: crimson;
+}
